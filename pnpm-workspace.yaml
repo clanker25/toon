@@ -1,0 +1,19 @@
+minimumReleaseAgeExcludePrune: true
+minimumReleaseAgeExclude:
+  - '@toon-format/spec@4.4.0'
+  - utilful@3.5.1
+
+trustPolicy: no-downgrade
+trustPolicyExclude:
+  - vite@5.4.21
+
+shellEmulator: false
+
+packages:
+  - docs
+  - benchmarks
+  - packages/*
+
+allowBuilds:
+  '@parcel/watcher': true
+  esbuild: true
