@@ -1,0 +1,35 @@
+{
+  "name": "@toon-format/cli",
+  "type": "module",
+  "version": "4.4.0",
+  "description": "CLI for JSON ↔ TOON conversion using @toon-format/toon",
+  "author": "Johann Schopplich <hello@johannschopplich.com>",
+  "license": "MIT",
+  "homepage": "https://toonformat.dev",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toon-format/toon.git"
+  },
+  "bugs": {
+    "url": "https://github.com/toon-format/toon/issues"
+  },
+  "bin": {
+    "toon": "bin/toon.mjs"
+  },
+  "files": [
+    "bin",
+    "dist"
+  ],
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "dev": "node ./src/entry.ts --help",
+    "build": "tsdown",
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "tokenx": "^2.1.1",
+    "utilful": "^3.5.1"
+  }
+}
